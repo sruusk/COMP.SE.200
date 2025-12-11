@@ -6,7 +6,6 @@ describe('toNumber (ESM module)', () => {
   let isObject
 
   beforeAll(async () => {
-    // Adjust the path to './toNumber.js' if necessary
     const module = await import('../src/toNumber.js')
     toNumber = module.default
     const isSymbolModule = await import('../src/isSymbol.js') 
