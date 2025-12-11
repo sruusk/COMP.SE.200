@@ -32,6 +32,12 @@ describe('add (ESM module)', () => {
       .toBe(-10)
   })
 
+  test('add two strings', () => {
+    const result = add('6', '4')
+    expect(result)
+      .toBe('10')
+  })
+
   test('uses default when one argument is undefined', () => {
     expect(add(undefined, 5)).toBe(5)
     expect(add(7, undefined)).toBe(7)
