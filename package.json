@@ -4,6 +4,13 @@
   "description": "",
   "main": "index.js",
   "type": "module",
+
+  "jest": {
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "/[.]internal/"
+    ]
+  },
   "scripts": {
     "test": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js",
     "test:watch": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js --watchAll",
