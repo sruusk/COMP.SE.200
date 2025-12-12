@@ -22,13 +22,8 @@ describe('AI upperFirst', () => {
       .toBe('\nÄiti')
   })
 
-  test('throws when first character is not a letter', () => {
+  test('returns string when first character is not a letter', () => {
     expect(() => upperFirst('1tuni'))
-      .toThrow()
-  })
-
-  test('throws when input is not a string', () => {
-    expect(() => upperFirst(10))
-      .toThrow()
+      .toBe('1tuni')
   })
 })

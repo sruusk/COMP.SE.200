@@ -12,12 +12,12 @@ describe('upperFirst (Phase 1 Plan)', () => {
     expect(upperFirst('MATTI')).toBe('MATTI')
   })
 
-  test('throws strings with whitespace and numbers at start', () => {
+  test('returns strings with whitespace and numbers at start', () => {
     expect(upperFirst(' hello')).toBe(' hello')
     expect(upperFirst('1hello')).toBe('1hello')
   })
 
-  test('throws empty, null, and undefined inputs', () => {
+  test('returns empty, null, and undefined inputs', () => {
     expect(upperFirst('')).toBe('')
     expect(upperFirst(null)).toBe('')
     expect(upperFirst(undefined)).toBe('')
