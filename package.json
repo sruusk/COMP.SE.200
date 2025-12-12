@@ -12,9 +12,9 @@
     ]
   },
   "scripts": {
-    "test": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js",
-    "test:watch": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js --watchAll",
-    "test:coverage": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js --coverage",
+    "test": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js --testMatch \"**/test/**.test.cjs\"",
+    "test:watch": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js --testMatch \"**/test/**.test.cjs\" --watchAll",
+    "test:coverage": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js --testMatch \"**/test/**.test.cjs\" --coverage",
     "test:ai": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js --testMatch \"**/AI/**/*.ai.test.cjs\""
   },
   "author": "",
