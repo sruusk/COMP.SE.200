@@ -1,10 +1,9 @@
 require('jest-chain')
 
-describe('add (ESM module)', () => {
+describe('add', () => {
   let add
 
   beforeAll(async () => {
-    // Dynamically import the ESM module
     ({ default: add } = await import('../src/add.js'))
   })
 
