@@ -1,6 +1,6 @@
 require('jest-chain')
 
-describe('defaultTo', () => {
+describe('defaultTo (Phase 1 Plan)', () => {
   let defaultTo
 
   beforeAll(async () => {

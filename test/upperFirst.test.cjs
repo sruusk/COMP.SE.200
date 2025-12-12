@@ -1,6 +1,6 @@
 require('jest-chain')
 
-describe('upperFirst', () => {
+describe('upperFirst (Phase 1 Plan)', () => {
   let upperFirst
 
   beforeAll(async () => {
